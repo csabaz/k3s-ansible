@@ -9,8 +9,8 @@
   roles:
     - role: k3s_upgrade
 
-- name: Upgrade K3s Agents
-  hosts: agent
-  become: true
-  roles:
-    - role: k3s_upgrade
+#- name: Upgrade K3s Agents
+#  hosts: agent
+#  become: true
+#  roles:
+#    - role: k3s_upgrade
