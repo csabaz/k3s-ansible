@@ -5,8 +5,8 @@
   become: true
   roles:
     - role: prereq
-    - role: airgap
-    - role: raspberrypi
+#    - role: airgap
+#    - role: raspberrypi
 
 - name: Setup K3S server
   hosts: server
@@ -14,8 +14,8 @@
   roles:
     - role: k3s_server
 
-- name: Setup K3S agent
-  hosts: agent
-  become: true
-  roles:
-    - role: k3s_agent
+#- name: Setup K3S agent
+#  hosts: agent
+#  become: true
+#  roles:
+#    - role: k3s_agent
